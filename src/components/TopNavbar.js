@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import AppleIcon from '@mui/icons-material/Apple';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import './styles.css';
 
 const TopNavbar = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-//import MovieCard from './components/MovieCard';
+
 import './index.css';
 import './styles.css';
 import Title from './components/Title';

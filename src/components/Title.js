@@ -2,10 +2,11 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import AppleIcon from '@mui/icons-material/Apple';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import './styles.css';
 
 const Title = () => {
   return (
-    <div className="bg-[#0B0B0B] p-8 text-white">
+    <div className="bg-[#0B0B0B] p-8 text-white h-full">
       <div className="flex flex-col sm:flex-row items-center mb-4">
         <div className="text-[#ffffff] font-bold text-xl mb-2 sm:mb-0">★ ★ ★ ★ ★</div>
         <span className="ml-0 sm:ml-2 text-white text-sm">trusted by 10,000+ creators</span>
