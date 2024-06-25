@@ -8,7 +8,7 @@ import TopNavbar from './components/TopNavbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App h-svh">
     <TopNavbar />
       <Title />
       

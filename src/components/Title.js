@@ -43,7 +43,7 @@ const Title = () => {
           </a>
         </div>
         <div className="flex-1 mt-4 sm:mt-0 sm:ml-8">
-          <img src="./assets/ss.jpg" alt="A descriptive text for the image" className="w-full h-auto rounded-lg" />
+          <img src="./assets/SS.jpg" alt="A descriptive text for the image" className="w-full h-auto rounded-lg" />
         </div>
       </div>
       <div className="flex justify-center sm:justify-start mt-4"> {/* Center for small screens, left-align for larger */}
