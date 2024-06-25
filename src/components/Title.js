@@ -47,7 +47,7 @@ const Title = () => {
         </div>
       </div>
       <div className="flex justify-center sm:justify-start mt-4"> {/* Center for small screens, left-align for larger */}
-        <a href="/assets/contact-us.pdf" target="_blank" rel="noopener noreferrer" className="text-white text-lg self-center underline hover:text-gray-300">Contact Us</a>
+        <a href="/assets/contact-us.pdf" target="_blank" rel="noopener noreferrer" className="text-white text-lg self-center hover:text-gray-300">Contact Us</a>
       </div>
       <div className="text-sm text-center sm:text-left mt-2">
         <a href="/assets/privacy-policy.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-300 mr-4">Privacy Policy</a>

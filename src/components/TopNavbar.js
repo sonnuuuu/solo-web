@@ -5,14 +5,14 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 const TopNavbar = () => {
   return (
-    <nav className="bg-[#0B0B0B] p-4 flex justify-between items-center">
-      <div className="flex items-center">
-        <div className=" fontFamily: 'Gilroy', h-10 w-10 ml-8 mb-3 bg-[#A5FF00] rounded flex items-center justify-center text-black text-4xl font-bold">
+    <nav className="bg-[#0B0B0B] p-4 flex flex-col md:flex-row justify-between items-center">
+      <div className="flex items-center mb-4 md:mb-0">
+        <div className="fontFamily: 'Gilroy', h-10 w-10 ml-0 md:ml-8 mb-3 md:mb-0 bg-[#A5FF00] rounded flex items-center justify-center text-black text-4xl font-bold">
           S
         </div>
-        <div className="flex flex-col items-center">
-          <img src="/assets/logo.png" alt="Solo Logo" className="ml-2 mb-0 h-9" />
-          <div className="ml-7 mb-3 text-white text-sm">by WLDD</div>
+        <div className="flex flex-col items-center ml-0 md:ml-2">
+          <img src="/assets/logo.png" alt="Solo Logo" className="h-9" />
+          <div className="text-white text-sm">by WLDD</div>
         </div>
       </div>
       <a href="https://wldd.in/download" target="_blank" rel="noopener noreferrer">
