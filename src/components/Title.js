@@ -32,7 +32,7 @@ const Title = () => {
       <div className="flex flex-col sm:flex-row items-center mb-4 mt-4 sm:mt-8">
         <div className="flex items-center mb-4 sm:mb-0">
           <img src="./assets/star.png" alt="Star ratings" className="h-4 mb-2 sm:mb-0" />
-          <span className="ml-2 text-white text-lg">trusted by 10,000+ creators</span>
+          <span className="flex-row ml-2 text-white text-lg mr-4">trusted by 10,000+ creators</span>
         </div>
       </div>
       <div className="flex flex-col sm:flex-row">
@@ -63,7 +63,7 @@ const Title = () => {
           </div>
         </div>
         <div className="flex-1 mb-8 sm:mb-0">
-          <img src="./assets/SS.png" alt="A descriptive image" className="mt-8 sm:mt-0" />
+          <img src="./assets/SS.png" alt="A descriptive image" className="mt-8 sm:mt-0" /> 
         </div>
       </div>
     </div>

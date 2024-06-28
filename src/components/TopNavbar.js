@@ -28,7 +28,7 @@ const TopNavbar = () => {
       <div className="flex items-center mb-4 md:mb-0">
         <Link to="/" className="flex flex-col items-center">
           <img src="/assets/logo.png" alt="Solo Logo" className="h-10 ml-2 mt-4" />
-          <div className="text-white mt-1 text-sm questrial-regular">by WLDD</div>
+          <div className="text-white mt-1 ml-8 text-sm questrial-regular">by WLDD</div>
         </Link>
       </div>
       <a
