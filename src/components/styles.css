@@ -1,4 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 body {
-    background-color: #0b0b0b;
+    background-color: #081303;
+}
+
+.gilroy-font {
+  font-family: 'Gilroy', sans-serif;
+}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+.manrope-uniquifier {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.questrial-regular {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.clicked {
+  transform: scale(0.95); /* Scale down to create a click effect */
+  transition: transform 0.1s; /* Smooth transition */
+}
+
+.button-wrapper {
+  display: inline-block;
+  position: relative; /* Ensure proper stacking context */
+}
+
+.button-wrapper img {
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.button-wrapper:hover img {
+  transform: scale(1.1); /*  scale up on hover */
+  filter: brightness(1.2); /*  increase brightness on hover */
+}
+
+.button-wrapper.clicked img {
+  transform: scale(0.95); /* Example: scale down when clicked */
+}
+
+
+/* Footer styles */
+footer a {
+  display: block; /* Ensure links are block elements on mobile */
+  transition: color 0.2s ease; /* Smooth transition for color change */
+}
+
+footer a.hover {
+  color: #A3E635; /* Example hover color */
+}
+
+@media (min-width: 768px) {
+  footer a {
+    display: inline; /* Make links inline elements on larger screens */
   }
-  
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .nav-items {
+    flex-direction: row;
+  }
+  .title-text {
+    flex-direction: row;
+    text-align: left;
+  }
+  .title-text h1 {
+    text-align: left;
+  }
+}

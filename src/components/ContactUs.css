@@ -1,0 +1,116 @@
+/* Background styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.contact-us {
+    position: relative;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #0813034a, rgba(8, 19, 3, 0.27)); /* Transparent gradient background */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(15, 15, 15, 0.349); /* Semi-transparent border */
+    color: #96FF43; /* Text color */
+    overflow: hidden; /* Ensures no content spills outside */
+}
+
+.contact-us::before {
+    content: '';
+    position: absolute;
+    top: -40px; /* Adjust position for blur effect */
+    left: -40px; /* Adjust position for blur effect */
+    width: calc(100% + 80px); /* Adjust width for blur effect */
+    height: calc(100% + 80px); /* Adjust height for blur effect */
+    z-index: -1;
+    background: inherit; /* Inherit background from parent */
+    filter: blur(40px); /* Blur effect for background */
+    border-radius: 16px; /* Match main container's border radius */
+}
+
+/* Form and input styling */
+.contact-form {
+    position: relative; /* Ensure z-index stacking context */
+    z-index: 1; /* Place form above pseudo-element */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff; /* Adjust text color for input fields */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for input fields */
+}
+
+button {
+    width: 40%;
+    padding: 10px; /* Reduced padding */
+    background-color: #103b1a;
+    color: white;
+    border: 2px solid #1b4424; /* Added border */
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: center; /* Align button vertically in flex container */
+    margin: 0 auto;
+    display: block;
+    font-family: Questrial;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #0aa92cde;
+    border-color: #135921f9; /* Adjusted border color on hover */
+}
+
+/* Additional styling for response messages */
+.thank-you-message,
+.new-response-message,
+.error {
+    text-align: center;
+}
+
+/* Media query for phones */
+@media (max-width: 600px) {
+    .contact-us {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .contact-us::before {
+        top: -20px;
+        left: -20px;
+        width: calc(100% + 40px);
+        height: calc(100% + 40px);
+        filter: blur(20px);
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        width: 80%;
+        font-size: 18px;
+    }
+}
