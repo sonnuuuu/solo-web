@@ -79,3 +79,7 @@ footer a.hover {
     text-align: left;
   }
 }
+
+.max-w-full {
+  max-width: 100%; /* Ensures image doesn't exceed container width */
+}

@@ -5,8 +5,8 @@ import './ContactUs.css';
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
-    message: ''
+    phone: '',
+    instagram: ''
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -38,8 +38,8 @@ const ContactUs = () => {
         setError(null);
         setFormData({
           name: '',
-          email: '',
-          message: ''
+          phone: '',
+          instagram: ''
         });
         setShowNewResponse(true);
         setTimeout(() => {
@@ -56,7 +56,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="contact-us ">
+    <div className="contact-us">
       <h1>Contact Us</h1>
       <div className="contact-details text-white">
         <div className="address">
@@ -93,33 +93,33 @@ const ContactUs = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="phone">Phone Number:</label>
               <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                value={formData.message}
+              <label htmlFor="instagram">Instagram Profile Link:</label>
+              <input
+                type="url"
+                id="instagram"
+                name="instagram"
+                value={formData.instagram}
                 onChange={handleChange}
                 required
-              ></textarea>
+              />
             </div>
             <button type="submit" className="submit-button">Submit</button>
           </form>
         )}
         {showNewResponse && (
           <div className="new-response-message">
-            <p>Submitted (Masti Nahi Rukni Chaihe )</p>
+            <p>Submitted (Masti Nahi Rukni Chaihe)</p>
           </div>
         )}
         {error && <div className="error">{error}</div>}

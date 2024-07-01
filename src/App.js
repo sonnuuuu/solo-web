@@ -21,7 +21,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          {/* Add more routes as needed */}
+          
         </Routes>
         <Footer />
       </Router>

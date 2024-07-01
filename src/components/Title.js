@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 import { useLocation } from 'react-router-dom';
+import LazyLoad from 'react-lazyload';
 
 const Title = () => {
   const location = useLocation();
@@ -31,7 +32,9 @@ const Title = () => {
     <div className="bg-[#081303] p-8 text-white min-h-screen questrial-regular">
       <div className="flex flex-col sm:flex-row items-center mb-4 mt-4 sm:mt-8">
         <div className="flex items-center mb-4 sm:mb-0">
-          <img src="./assets/star.png" alt="Star ratings" className="h-4 mb-2 sm:mb-0" />
+          <LazyLoad height={200} offset={100}>
+            <img src="./assets/star.png" alt="Star ratings" className="h-4 mb-2 sm:mb-0" />
+          </LazyLoad>
           <span className="flex-row ml-2 text-white text-lg mr-4">trusted by 10,000+ creators</span>
         </div>
       </div>
@@ -54,16 +57,26 @@ const Title = () => {
               onMouseLeave={handleMouseLeave}
               className={`button-wrapper ${isClicked ? 'clicked' : ''} ${hoverEffect ? 'hovered' : ''}`}
             >
-              <img
-                src="./assets/earning.png"
-                alt="Start earning now"
-                className="h-12"
-              />
+              <LazyLoad height={50} offset={100}>
+                <img
+                  src="./assets/earning.png"
+                  alt="Start earning now"
+                  className="h-12"
+                />
+              </LazyLoad>
             </a>
           </div>
         </div>
         <div className="flex-1 mb-8 sm:mb-0">
-          <img src="./assets/SS.png" alt="A descriptive image" className="mt-8 sm:mt-0" /> 
+          <LazyLoad height={200} offset={100}>
+            <img
+              srcset="./assets/SS.png 480w, ./assets/SS.png 800w"
+              sizes="(max-width: 543px) 480px, 800px"
+              src="./assets/SS.png"
+              alt="A descriptive image"
+              class="mt-10 sm:mt-0 mr-10 max-ww-full h-auto"
+            />
+          </LazyLoad>
         </div>
       </div>
     </div>
