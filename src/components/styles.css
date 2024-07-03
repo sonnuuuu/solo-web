@@ -83,3 +83,20 @@ footer a.hover {
 .max-w-full {
   max-width: 100%; /* Ensures image doesn't exceed container width */
 }
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+.hover-text {
+  transition: color 0.3s ease;
+}
+
+.hover-text:hover {
+  color: #C3FF35; /* Change text color on hover */
+}

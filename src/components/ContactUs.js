@@ -119,7 +119,7 @@ const ContactUs = () => {
         )}
         {showNewResponse && (
           <div className="new-response-message">
-            <p>Submitted (Masti Nahi Rukni Chaihe)</p>
+            <p>Submitted (Masti Nahi Rukni Chaiye)</p>
           </div>
         )}
         {error && <div className="error">{error}</div>}
